@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    
+
+    <!--Creating a form-->
+
+    <div class="mainContainer">
+        <div class="formSection">
+            <form>
+
+                <div class="firstNameSection" style="display:block">
+                    <Label for="firstName_id">First Name</Label><br>
+                    <input type="text" name="FirstName" id="firstName_id" placeholder="Name" required>
+                </div>
+               
+                <div class="lastNameSetion">
+                    <Label for="lastName_id">Last Name</Label><br>
+                    <input type="text" name="LastName" id="lastName_id" placeholder="Name" required>
+                </div>
+                
+        
+                <div class="address_1_Section">
+                    <label for="address_id1">Line 1 : Door / Street / Home town</label><br>
+                    <input type="text" name="address1" id="address_id1" required>
+                </div>
+                
+        
+                <div class="address_2_section">
+                    <label for="address_id2">City</label><br>
+                    <input type="text" name="address1" id="address_id2" required>
+                </div>
+                
+        
+                <div class="district_Section">
+                    <label for="district_id">District</label><br>
+                    <select name="district" id="district_id">
+                        <option value="">Select...</option>
+                        <option value="Erode">Erode</option>
+                        <option value="Ariyalur">Ariyalur</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Thiruppur">Thiruppur</option>
+                        <option value="Thanjavur">Thanjavur</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Namakal">Namakal</option>
+                    </select>
+                </div>
+
+                <div class="state_Section">
+                    <Label for="state_id">State</Label><br>
+                    <select name="state" id="state_id">
+                        <option value="">Select...</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telugana">Telugana</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                    </select>
+                </div>
+
+                <div class="country_Selection">
+                    <Label for="country_id">Country</Label><br>
+                    <select name="country" id="country_id">
+                        <option value="">Select...</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="England">England</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+                </div>
+                
+                <div class="pincode_section">
+                    <label for="pincode_id">PIN</label><br>
+                    <input type="text" name="pincode" id="pincode_id" maxlength="6" minlength="6">
+                </div>
+                
+                <div class="genderCheck_Section">
+                    <label for="genderCheck">Gender</label><br>
+                    <input type="radio" name="gender" id="genderCheck" value="Male">Male
+                    <input type="radio" name="gender" id="genderCheck" value="Female">Female
+                    <input type="radio" name="gender" id="genderCheck" value="Transgender">TransGender
+                </div>
+
+                <div class="food_Selection">
+                    <Label for="food_id">Select the Food : (Please select atleast 2 from this list)</Label><br>
+                    <input type="checkbox" name="foody" value="Pongal">Pongal <br>
+                    <input type="checkbox" name="foody" value="Vadai">Vadai <br>
+                    <input type="checkbox" name="foody" value="Butter Milk">Butter Milk <br>
+                    <input type="checkbox" name="foody" value="Non veg">Non veg <br>
+                    <input type="checkbox" name="foody" value="Biriyani">Biriyani <br>
+                </div>
+
+                <div class="submit_Section">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+
+                <div class="reset_Section">
+                    <button type="reset">Erase</button>
+                </div>
+            </form>
+        </div>
+        <div class="tableSection">
+            <table class="myTable_cls">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address 1</th>
+                    <th>Address 2</th>
+                    <th>District</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>PIN</th>
+                    <th>Gender</th>
+                    <th>Food Selected</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./vanilla.js"></script>
+</body>
+</html>
